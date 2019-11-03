@@ -73,4 +73,8 @@ public class ejercicio15 extends AppCompatActivity {
             Toast.makeText(this, "No se pudo leer", Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void cerrarActiviy(View view){
+        finish();
+    }
 }

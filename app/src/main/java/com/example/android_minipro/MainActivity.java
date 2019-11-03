@@ -23,4 +23,14 @@ public class MainActivity extends AppCompatActivity {
         Intent ok = new Intent(this,venteYseis.class);
         startActivity(ok);
     }
+
+    public void TreintaYNueve(View view){
+        Intent ok = new Intent(this,treintaYNueve.class);
+        startActivity(ok);
+    }
+
+    public void Cincuenta(View view){
+        Intent ok = new Intent(this,cincuenta.class);
+        startActivity(ok);
+    }
 }

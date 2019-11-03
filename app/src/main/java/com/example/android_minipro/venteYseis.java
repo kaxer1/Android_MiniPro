@@ -23,8 +23,10 @@ public class venteYseis extends AppCompatActivity implements MediaPlayer.OnPrepa
     public void ejecutar(View v) {
         mp = new MediaPlayer();
         mp.setOnPreparedListener(this);
+
+        // http://wvw.simp3s.net/descargar-mp3/escuchar DE ESA PAGINA PODRAS DESCARGAR LOS ARCHIVOS
         try {
-            mp.setDataSource("http://www.javaya.com.ar/recursos/gato.mp3");
+            mp.setDataSource("https://www.yt2mp3s.me/@download/251-5dbe36cd7102b-2280000-285-64-webm-4272205/mp3/LtMQDPAnauE/Victor%2BK%25C3%25BCppers%253A%2BPor%2Bqu%25C3%25A9%2Bes%2Btan%2Bimportante%2Baprender%2Ba%2Bescuchar.mp3");
             mp.prepareAsync();
         } catch (IOException e) {
         }
