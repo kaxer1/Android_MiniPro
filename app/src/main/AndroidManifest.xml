@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cincuenta"></activity>
+        <activity android:name=".trece"></activity>
+        <activity android:name=".cincuenta" />
         <activity android:name=".treintaYNueve" />
         <activity android:name=".venteYseis" />
         <activity android:name=".ejercicio15" />
