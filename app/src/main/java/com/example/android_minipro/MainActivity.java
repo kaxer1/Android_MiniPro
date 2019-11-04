@@ -14,6 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void trece(View view){
+        Intent ok = new Intent(this,trece.class);
+        startActivity(ok);
+    }
+
     public void quince(View view){
         Intent ok = new Intent(this,ejercicio15.class);
         startActivity(ok);
@@ -21,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void VenteYSeis(View view){
         Intent ok = new Intent(this,venteYseis.class);
+        startActivity(ok);
+    }
+
+    public void veinteYtres(View view){
+        Intent ok = new Intent(this,veinteYtres.class);
         startActivity(ok);
     }
 
