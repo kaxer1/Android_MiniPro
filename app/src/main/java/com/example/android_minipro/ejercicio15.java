@@ -11,8 +11,6 @@ import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -25,7 +23,7 @@ public class ejercicio15 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ejercicio15);
-        et_nombre=(EditText)findViewById(R.id.et1);
+        et_nombre=(EditText)findViewById(R.id.etex1);
         et_contenido=(EditText)findViewById(R.id.et2);
     }
 

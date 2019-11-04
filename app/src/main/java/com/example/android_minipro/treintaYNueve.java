@@ -1,6 +1,7 @@
 package com.example.android_minipro;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,9 +9,8 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.RelativeLayout;
 
-public class treintaYNueve extends AppCompatActivity {
+public class treintaYNueve extends AppCompatActivity implements View.OnTouchListener{
 
     private int corx, cory;
     private Lienzo fondo;
@@ -22,10 +22,15 @@ public class treintaYNueve extends AppCompatActivity {
 
         corx = 100;
         cory = 100;
-        RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
+        ConstraintLayout layout1 = (ConstraintLayout) findViewById(R.id.layout1);
         fondo = new Lienzo(this);
-        fondo.setOnTouchListener((View.OnTouchListener) this);
+        fondo.setOnTouchListener(this);
         layout1.addView(fondo);
+    }
+
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        return false;
     }
 
     class Lienzo extends View {
@@ -49,9 +54,5 @@ public class treintaYNueve extends AppCompatActivity {
             pincel1.setStyle(Paint.Style.STROKE);
             canvas.drawCircle(corx, cory, 20, pincel1);
         }
-    }
-
-    public void cerrarActiviy(View view){
-        finish();
     }
 }
