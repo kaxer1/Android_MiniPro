@@ -17,7 +17,7 @@ public class treintaYuno extends AppCompatActivity {
         setContentView(R.layout.activity_treinta_yuno);
 
         RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
-        Lienzo fondo = new Lienzo(this);
+        Lienzo fondo = new Lienzo(treintaYuno.this);
         layout1.addView(fondo);
 
     }

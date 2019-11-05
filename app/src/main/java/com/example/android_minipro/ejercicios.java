@@ -14,12 +14,12 @@ public class ejercicios extends AppCompatActivity {
         setContentView(R.layout.activity_ejercicios);
     }
 
-    public void trece(View view){
+    public void Trece(View view){
         Intent ok = new Intent(this,trece.class);
         startActivity(ok);
     }
 
-    public void quince(View view){
+    public void Quince(View view){
         Intent ok = new Intent(this,ejercicio15.class);
         startActivity(ok);
     }
@@ -29,7 +29,7 @@ public class ejercicios extends AppCompatActivity {
         startActivity(ok);
     }
 
-    public void veinteYtres(View view){
+    public void VeinteYtres(View view){
         Intent ok = new Intent(this,veinteYtres.class);
         startActivity(ok);
     }

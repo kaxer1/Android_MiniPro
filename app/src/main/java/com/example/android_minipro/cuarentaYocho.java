@@ -29,7 +29,7 @@ public class cuarentaYocho extends AppCompatActivity {
         telefonos.add("marcos : 43734843");
         telefonos.add("luis : 6554343");
         telefonos.add("ana : 7445434");
-        adaptador1=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,telefonos);
+        adaptador1=new ArrayAdapter<String>(cuarentaYocho.this,android.R.layout.simple_list_item_1,telefonos);
         lv1=(ListView)findViewById(R.id.listView);
         lv1.setAdapter(adaptador1);
 

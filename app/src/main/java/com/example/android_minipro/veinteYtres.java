@@ -15,12 +15,12 @@ public class veinteYtres extends AppCompatActivity {
     }
 
     public void presionGato(View v) {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.gato);
+        MediaPlayer mp = MediaPlayer.create(veinteYtres.this, R.raw.gato);
         mp.start();
     }
 
     public void presionLeon(View v) {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.leon);
+        MediaPlayer mp = MediaPlayer.create(veinteYtres.this, R.raw.leon);
         mp.start();
     }
 }
