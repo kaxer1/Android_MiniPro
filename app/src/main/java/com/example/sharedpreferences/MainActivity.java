@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.android_minipro.R;
@@ -23,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et1=(EditText)findViewById(R.id.et1);
+        et1=(EditText)findViewById(R.id.txtUsuario);
         SharedPreferences prefe=getSharedPreferences("datos", Context.MODE_PRIVATE);
         et1.setText(prefe.getString("mail",""));
 

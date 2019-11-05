@@ -5,42 +5,35 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EditText txtUsu;
+    private EditText txtPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        txtUsu = (EditText)findViewById(R.id.txtUsuario);
+        txtPass = (EditText) findViewById(R.id.txtPassword);
     }
 
-    public void trece(View view){
-        Intent ok = new Intent(this,trece.class);
-        startActivity(ok);
-    }
+    public void login(View v){
 
-    public void quince(View view){
-        Intent ok = new Intent(this,ejercicio15.class);
-        startActivity(ok);
-    }
+        if(txtUsu.getText().toString().equals("Admin") && txtPass.getText().toString().equals("admin")){
 
-    public void VenteYSeis(View view){
-        Intent ok = new Intent(this,venteYseis.class);
-        startActivity(ok);
-    }
+            Intent ok = new Intent(this,ejercicios.class);
+            startActivity(ok);
 
-    public void veinteYtres(View view){
-        Intent ok = new Intent(this,veinteYtres.class);
-        startActivity(ok);
-    }
+        }else{
 
-    public void TreintaYNueve(View view){
-        Intent ok = new Intent(this,treintaYNueve.class);
-        startActivity(ok);
-    }
+            Intent error = new Intent(this,error.class);
+            startActivity(error);
 
-    public void Cincuenta(View view){
-        Intent ok = new Intent(this,cincuenta.class);
-        startActivity(ok);
+        }
     }
 }

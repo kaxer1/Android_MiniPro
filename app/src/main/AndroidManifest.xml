@@ -4,7 +4,10 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +16,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Actividad2"></activity>
-        <activity android:name=".trece"></activity>
+        <activity android:name=".ejercicios"></activity>
+        <activity android:name=".menu" />
+        <activity android:name=".error" />
+        <activity android:name=".cuarentaYocho" />
+        <activity android:name=".treintaYuno" />
+        <activity android:name=".veinteYtres" />
+        <activity android:name=".Actividad2" />
+        <activity android:name=".trece" />
         <activity android:name=".cincuenta" />
         <activity android:name=".treintaYNueve" />
         <activity android:name=".venteYseis" />
@@ -34,9 +43,8 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"></meta-data>
+                android:resource="@xml/file_paths" />
         </provider>
-
     </application>
 
 </manifest>

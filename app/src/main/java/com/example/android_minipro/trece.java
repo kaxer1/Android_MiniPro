@@ -1,7 +1,6 @@
 package com.example.android_minipro;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -20,7 +19,7 @@ public class trece extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trece);
 
-        et1=(EditText)findViewById(R.id.et1);
+        et1=(EditText)findViewById(R.id.txtUsuario);
         SharedPreferences prefe=getSharedPreferences("datos", Context.MODE_PRIVATE);
         et1.setText(prefe.getString("mail",""));
 
